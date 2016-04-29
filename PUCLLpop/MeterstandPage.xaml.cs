@@ -107,5 +107,10 @@ namespace PUCLLpop
         }
 
         #endregion
+
+        private void btnWindmolens_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
