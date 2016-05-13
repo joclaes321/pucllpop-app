@@ -85,6 +85,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Batswitch.cs" />
     <Compile Include="BatterijPage.xaml.cs">
       <DependentUpon>BatterijPage.xaml</DependentUpon>
     </Compile>

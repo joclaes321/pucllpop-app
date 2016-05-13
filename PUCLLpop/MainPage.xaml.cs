@@ -110,7 +110,7 @@ namespace PUCLLpop
 
         private void btnMeterstanden_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame.Navigate(typeof(MeterstandPage));
         }
 
         private void btnMap_Click(object sender, RoutedEventArgs e)

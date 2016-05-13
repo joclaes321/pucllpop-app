@@ -7,6 +7,7 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Graphics.Display;
+using Windows.Storage;
 using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -108,17 +109,44 @@ namespace PUCLLpop
 
         #endregion
 
-        public static async Task<IList<Person>> GetPeople()
-        {
-            var file = await StorageFile.GetFileFromApplicationUriAsync(new Uri("ms-appx:///Assets/People.xml"));
-            var stream = await file.OpenStreamForReadAsync();
-            using (StreamReader sr = new StreamReader(stream))
-            {
-                while (sr.Peek() >= 0)
-                {
-                    var a = sr.ReadLine();
-                }
-            }
-        }
+        //public static async Task<IList<Batswitch>> GetData()
+        //{
+        //    var file = await StorageFile.GetFileFromApplicationUriAsync(new Uri("H:Data"));
+        //    var stream = await file.OpenStreamForReadAsync();
+        //    using (StreamReader sr = new StreamReader(stream))
+        //    {
+        //        while (sr.Peek() >= 0)
+        //        {
+        //            var a = sr.ReadLine();
+        //        }
+        //    }
+        //}
+
+        //public async string GetData()
+        //{
+        //    StorageFile file = await
+        //    ApplicationData.Current.LocalFolder.GetFileAsync(".csv");
+        //    string text = await FileIO.ReadTextAsync(file);
+        //    return text;
+        //}
+
+        //public IList<Batswitch> ReadCSV(string fileName)
+        //{
+            //// We change file extension here to make sure it's a .csv file.
+            //// TODO: Error checking.
+            //string[] lines = StorageFile.ReadAllLines(Path.ChangeExtension(fileName, ".csv"));
+
+            //// lines.Select allows me to project each line as a Person. 
+            //// This will give me an IEnumerable<Person> back.
+            //return lines.Select(line =>
+            //{
+            //    string[] data = line.Split(',');
+            //    // We return a person with the data in order.
+            //    return new Batswitch(data[0], data[1], Convert.ToInt32(data[2]), data[3]);
+            //});
+        //}
+        
+        
+
     }
 }
