@@ -32,7 +32,7 @@
             <Button x:Name="btnWindmolens" Content="Windmolens" HorizontalAlignment="Left" Margin="104,129,0,0" VerticalAlignment="Top" Height="62" Width="153" Click="btnWindmolens_Click"/>
             <Button x:Name="btnZonnepanelen" Content="Zonnepanelen" HorizontalAlignment="Left" Margin="104,177,0,0" VerticalAlignment="Top" Width="153"/>
             <Button x:Name="btnBiodiesel" Content="Biodiesel" HorizontalAlignment="Left" Margin="104,221,0,221" VerticalAlignment="Stretch" Width="153"/>
-            <Button x:Name="btnBatterijen" Content="Batterijen" HorizontalAlignment="Left" Margin="104,267,0,0" VerticalAlignment="Top" Width="153"/>
+            <Button x:Name="btnBatterijen" Content="Batterijen" HorizontalAlignment="Left" Margin="104,267,0,0" VerticalAlignment="Top" Width="153" Click="btnBatterijen_Click"/>
             <Button x:Name="btnOverzicht" Content="Overzicht" HorizontalAlignment="Left" Margin="104,311,0,0" VerticalAlignment="Top" Width="153"/>
 
         </Grid>

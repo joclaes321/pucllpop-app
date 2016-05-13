@@ -110,7 +110,12 @@ namespace PUCLLpop
 
         private void btnWindmolens_Click(object sender, RoutedEventArgs e)
         {
+            Frame.Navigate(typeof(WindmolensPage));
+        }
 
+        private void btnBatterijen_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(BatterijPage));
         }
     }
 }
